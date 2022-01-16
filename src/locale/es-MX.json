@@ -127,7 +127,7 @@
       "send": "Enviar",
       "users": "¿Cuántos usuarios necesitas?",
       "comments": "Preguntas o comentarios",
-      "setup": "Actualiza la variable .env VUE_APP_INTEGRATIONS_CONTACT_FORMSPREE"
+      "setup": "Actualiza la variable .env VITE_VUE_APP_INTEGRATIONS_CONTACT_FORMSPREE"
     },
     "faq": {
       "title": "Preguntas más frecuentes",
