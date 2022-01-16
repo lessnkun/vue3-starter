@@ -1,5 +1,5 @@
 {
-  "name": "saasfrontends-vue3-essential",
+  "name": "saasfrontends-vue3-starter",
   "version": "1.0.0",
   "scripts": {
     "serve": "vite",
