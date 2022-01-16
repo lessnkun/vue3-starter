@@ -4,7 +4,7 @@
     <div class="bg-white dark:bg-gray-900">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="sm:flex sm:flex-col sm:align-center">
-          <div class="relative max-w-Footerxl mx-auto py-12 sm:py-6 w-full overflow-hidden">
+          <div class="relative max-w-xl mx-auto py-12 sm:py-6 w-full overflow-hidden">
             <svg
               class="absolute left-full transform translate-x-1/2"
               width="404"
