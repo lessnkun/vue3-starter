@@ -136,16 +136,3 @@ const getClasses = computed(() => {
   return isDragging.value && !loading.value ? "bg-theme-200 border-2 border-dashed border-theme-800" : "";
 })
 </script>
-
-<style scoped>
-.drop {
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  transition: background-color 0.2s ease-in-out;
-}
-
-#uploadmyfile {
-  display: none;
-}
-</style>
