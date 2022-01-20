@@ -205,7 +205,6 @@
   </div>
 </template>
 
-<script lang="ts"></script>
 <script setup lang="ts">
 import i18n from "@/locale/i18n";
 import { onMounted, ref } from "vue";

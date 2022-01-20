@@ -11,31 +11,24 @@
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import store from "./store";
 import { Theme } from "./application/enums/shared/Theme";
 import TopBanner from "@/components/ui/banners/TopBanner.vue";
 import { onMounted } from "@vue/runtime-core";
 import { useMeta } from "@/modules/vue-meta";
-export default {
-  components: {
-    TopBanner
-  },
-  setup() {
-    useMeta({
-      title: '',
-      htmlAttrs: { lang: 'en', amp: true }
-    })
+useMeta({
+  title: '',
+  htmlAttrs: { lang: 'en', amp: true }
+})
 
-    onMounted(() => {
-      const theme = store.state?.theme?.theme ?? Theme.LIGHT;
-      const htmlClasses = document.querySelector("html")?.classList;
-      if (theme === 0) {
-        htmlClasses?.remove("dark");
-      } else {
-        htmlClasses?.add("dark");
-      }
-    })
+onMounted(() => {
+  const theme = store.state?.theme?.theme ?? Theme.LIGHT;
+  const htmlClasses = document.querySelector("html")?.classList;
+  if (theme === 0) {
+    htmlClasses?.remove("dark");
+  } else {
+    htmlClasses?.add("dark");
   }
-}
+})
 </script>

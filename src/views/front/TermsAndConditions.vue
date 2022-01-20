@@ -94,21 +94,11 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
+<script setup lang="ts">
 import Header from "@/components/front/Header.vue";
 import Footer from "@/components/front/Footer.vue";
 import i18n from "@/locale/i18n";
 import { useMeta } from "@/modules/vue-meta";
 
-export default defineComponent({
-  name: 'TermsAndConditions',
-  components: {
-    Header,
-    Footer,
-  },
-  setup() {
-    useMeta({ title: i18n.global.t("front.terms.title") })
-  }
-})
+useMeta({ title: i18n.global.t("front.terms.title") })
 </script>
