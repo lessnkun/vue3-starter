@@ -4,6 +4,8 @@ import { Module } from "vuex";
 import { UserLoggedResponse } from "@/application/contracts/core/users/UserLoggedResponse";
 import i18n from "@/locale/i18n";
 import { AuthState, RootState } from "../types";
+import { UserDto } from "@/application/dtos/core/users/UserDto";
+import { UserType } from "@/application/enums/core/users/UserType";
 
 const initialState: AuthState = {
   authenticated: false,
@@ -75,15 +77,15 @@ export const auth: Module<AuthState, RootState> = {
         // ignore
       }
 
-      // if (router.currentRoute.value.query.redirect) {
-      //   router.push(router.currentRoute.value.query.redirect.toString());
-      // } else {
-      //   if ((payload.user as UserDto).type === UserType.Admin && import.meta.env.VITE_VUE_APP_SERVICE !== "sandbox") {
-      //     router.push("/admin");
-      //   } else {
-      //     router.push("/app/dashboard");
-      //   }
-      // }
+      if (router.currentRoute.value.query.redirect) {
+        router.push(router.currentRoute.value.query.redirect.toString());
+      } else {
+        if ((payload.user as UserDto).type === UserType.Admin && import.meta.env.VITE_VUE_APP_SERVICE !== "sandbox") {
+          router.push("/admin");
+        } else {
+          router.push("/app/dashboard");
+        }
+      }
     },
     logout: (state: AuthState) => {
       state.authenticated = false;

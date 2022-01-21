@@ -4,14 +4,10 @@ import store from "@/store";
 import { UserType } from "@/application/enums/core/users/UserType";
 import { TenantUserRole } from "@/application/enums/core/tenants/TenantUserRole";
 import frontRoutes from "./frontRoutes";
+import { appCoreRoutes } from "./coreRoutes";
+import { adminRoutes } from "./adminRoutes";
 
-const routes: any[] = [
-  // {
-  //   path: "/:catchAll(.*)",
-  //   redirect: "/",
-  // },
-  ...frontRoutes,
-];
+const routes: any[] = [...frontRoutes, appCoreRoutes, adminRoutes];
 
 const router = createRouter({
   history: createWebHistory(),

@@ -16,23 +16,12 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
+<script setup lang="ts">
 import Header from "@/components/front/Header.vue";
 import Plans from "@/components/front/Plans.vue"
 import Footer from "@/components/front/Footer.vue";
 import { useMeta } from "@/modules/vue-meta";
 import i18n from "@/locale/i18n";
 
-export default defineComponent({
-  name: 'Pricing',
-  components: {
-    Header,
-    Plans,
-    Footer,
-  },
-  setup() {
-    useMeta({ title: i18n.global.t("front.pricing.title") })
-  }
-})
+useMeta({ title: i18n.global.t("front.pricing.title") })
 </script>

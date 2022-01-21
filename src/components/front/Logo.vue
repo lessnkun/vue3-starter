@@ -11,16 +11,11 @@
   </router-link>
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
-
-export default defineComponent({
-  name: 'Logo',
-  props: {
-    size: {
-      type: String,
-      default: 'h-9 w-auto'
-    }
+<script setup lang="ts">
+defineProps({
+  size: {
+    type: String,
+    default: 'h-9 w-auto'
   }
 })
 </script>
