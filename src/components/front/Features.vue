@@ -138,7 +138,6 @@
               />
               <div>
                 {{ $t("front.features.frontend.i18n.description") }}
-                <!-- eslint-disable-next-line @intlify/vue-i18n/no-raw-text -->
                 <strong>i18n-ally</strong>.
               </div>
             </dd>
@@ -206,7 +205,6 @@
               />
               <div>
                 {{ $t("front.features.frontend.tailwindcss.description") }}
-                <!-- eslint-disable-next-line @intlify/vue-i18n/no-raw-text -->
                 <strong>Dark Mode</strong>.
               </div>
             </dd>
@@ -307,7 +305,6 @@
               <div>
                 {{ $t("front.features.frontend.eslint.description") }}
                 <strong>
-                  <!-- eslint-disable-next-line @intlify/vue-i18n/no-raw-text -->
                   <code>@typescript-eslint</code>
                 </strong>.
               </div>

@@ -1,4 +1,4 @@
-<!-- eslint-disable @intlify/vue-i18n/no-raw-text -->
+
 <template>
   <div class="space-y-2 w-full">
     <div class="flex justify-between">

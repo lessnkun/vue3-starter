@@ -1,4 +1,4 @@
-<!-- eslint-disable @intlify/vue-i18n/no-raw-text -->
+
 <template>
   <div v-if="open" class="bg-slate-900 border-b-2 border-yellow-500 shadow-2xl">
     <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">

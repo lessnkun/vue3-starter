@@ -1,4 +1,4 @@
-<!-- eslint-disable @intlify/vue-i18n/no-raw-text -->
+
 <template>
   <div>
     <ButtonPrimary @click="increment(1)">Counter: {{ counter }}</ButtonPrimary>

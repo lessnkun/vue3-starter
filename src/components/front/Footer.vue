@@ -1,4 +1,4 @@
-<!-- eslint-disable @intlify/vue-i18n/no-raw-text -->
+
 <template>
   <footer>
     <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">

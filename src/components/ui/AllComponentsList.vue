@@ -1,4 +1,4 @@
-<!-- eslint-disable @intlify/vue-i18n/no-raw-text -->
+
 <template>
   <div class="space-y-6 pb-12 p-4 mx-auto max-w-2xl text-slate-900">
     <div class="space-y-1">
