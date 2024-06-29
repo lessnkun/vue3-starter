@@ -1,4 +1,5 @@
 import Landing from "@/views/front/Landing.vue";
+import MindMap from "@/views/front/MindMap.vue";
 import Pricing from "@/views/front/Pricing.vue";
 import Contact from "@/views/front/Contact.vue";
 import PrivacyPolicy from "@/views/front/PrivacyPolicy.vue";
@@ -18,6 +19,10 @@ export default [
   {
     path: "/",
     component: Landing,
+  },
+  {
+    path: "/imindmap",
+    component: MindMap,
   },
   {
     path: "/pricing",

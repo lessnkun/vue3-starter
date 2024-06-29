@@ -24,6 +24,7 @@
     "postcss-cli": "^9.0.2",
     "postcss-loader": "^3.0.0",
     "register-service-worker": "^1.7.2",
+    "simple-mind-map": "^0.10.1",
     "stripe": "^8.79.0",
     "tiny-emitter": "^2.1.0",
     "vue": "^3.2.6",

@@ -99,6 +99,7 @@
   "front": {
     "navbar": {
       "product": "Producto",
+      "imindmap": "iMindMap",
       "pricing": "Precios",
       "contact": "Contacto",
       "terms": "Términos y Condiciones",

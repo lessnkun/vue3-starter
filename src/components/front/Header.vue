@@ -185,6 +185,7 @@ const route = useRoute();
 const droppedDown = ref(false);
 const links = ref([
   { path: "/", title: $t("front.navbar.product") },
+  { path: "/imindmap", title: $t("front.navbar.imindmap") },
   { path: "/pricing", title: $t("front.navbar.pricing") },
   { path: "/contact", title: $t("front.navbar.contact") },
   { path: "/components", title: $t("admin.components.title") },
